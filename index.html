@@ -5,22 +5,28 @@
     <link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<!--The fake bacground-->
 <div id="downPanel">
-<div id="swipe" onclick="swipeEvent('downPanel','swipe','arrowPos');">
+<!--The swipe button-->
+<div id="swipe" onclick="swipeEvent('downPanel','swipe','arrowPos','text');">
     <span class="string">Swipe</span>
     <div id="arrowPos"></div>
         </div>
+	<div >
+		<h1 id="text">This is a fade out text.</h1>
+	</div>
     </div>
-<div id="circle" >
-    <button id="btn" onclick = "clickEvent('circle','btn','list');">
+<!--The left side menu which will slide -->
+<div id="menu" >
+    <button id="btn" onclick = "clickEvent('menu','btn','list');">
     <span class="lines" ></span>
     <span class="lines"></span>
     <span class="lines"></span>
     </button>
     <ul id="list">
-        <li>About</li>
-        <li>Contact</li>
-        <li>Pictures</li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Pictures</a></li>
     </ul>
     </div>
 <script src="main.js" type="application/javascript"></script>
